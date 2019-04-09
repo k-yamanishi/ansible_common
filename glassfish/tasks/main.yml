@@ -1,6 +1,6 @@
 ---
 - name: Install open-jdk
-  yum: name="java-{{ JAVA_VERSION }}-openjdk-devel" state=present
+  yum: name="java-{{ JAVA_VERSION }}-amazon-corretto" state=present
 
 - group: name=glassfish
 - user: name=glassfish group=glassfish
