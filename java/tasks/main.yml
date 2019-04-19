@@ -1,0 +1,8 @@
+---
+# install amazon corretto
+# 
+- name: install amazon corretto
+  yum: name={{ item }} state=present
+  with_items:
+    - https://d1f2yzg3dx5xke.cloudfront.net/java-{{ JAVA_VERSION }}-amazon-corretto-{{ JAVA_VERSION }}_{{ AMZN_VR }}.amzn2.x86_64.rpm
+    - https://d1f2yzg3dx5xke.cloudfront.net/java-{{ JAVA_VERSION }}-amazon-corretto-devel-{{ JAVA_VERSION }}_{{ AMZN_VR }}.amzn2.x86_64.rpm

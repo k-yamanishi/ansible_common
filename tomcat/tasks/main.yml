@@ -1,8 +1,8 @@
 ---
-- name: Install amazon-corretto
-  yum: name={{ item }}  state=present
-  with_items:
-    - java-{{ JAVA_VERSION }}-amazon-corretto-devel
+#- name: Install amazon-corretto
+#  yum: name={{ item }}  state=present
+#  with_items:
+#    - java-{{ JAVA_VERSION }}-amazon-corretto-devel
 #    - postgresql-jdbc
 #    - mysql-connector-java
 

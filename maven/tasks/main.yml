@@ -1,6 +1,6 @@
 ---
-- name: Install open-jdk
-  yum: name="java-{{ JAVA_VERSION }}-amazon-corretto-devel" state=present
+#- name: Install open-jdk
+#  yum: name="java-{{ JAVA_VERSION }}-amazon-corretto-devel" state=present
 
 - name: Check whether maven was downloaded or not
   stat: path="/opt/apache-maven-{{ MAVEN_VERSION }}"
